@@ -33,6 +33,8 @@ export class AppComponent {
       intB: this.intB
     };
 
+    // this.client.setEndpoint('http://www.dneonline.com/calculator.asmx');
+
     this.client.call('Add', body).subscribe(res => {
       this.xmlResponse = res.responseBody;
       this.message = res.result.AddResult;
