@@ -62,5 +62,5 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
  * APPLICATION IMPORTS
  */
 // VFA see https://github.com/angular/zone.js/issues/1001
-import 'core-js/es7/object';
-import 'core-js/es7/array';
+// import 'core-js/es7/object';
+// import 'core-js/es7/array';
