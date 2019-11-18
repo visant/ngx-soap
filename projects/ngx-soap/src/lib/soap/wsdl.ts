@@ -2358,7 +2358,7 @@ export async function open_wsdl(uri, options): Promise<any> {
   // }
   // return wsdl;
 
-  console.log('Reading url: %s', uri);
+  // console.log('Reading url: %s', uri);
   const httpClient: HttpClient = options.httpClient;
   const wsdlDef = await httpClient.get(uri, { responseType: 'text' }).toPromise();
   const wsdlObj = await new Promise((resolve) => {
@@ -2367,6 +2367,6 @@ export async function open_wsdl(uri, options): Promise<any> {
     wsdl.WSDL_CACHE = WSDL_CACHE;
     wsdl.onReady(resolve(wsdl));
   });
-  console.log("wsdl", wsdlObj)
+  // console.log("wsdl", wsdlObj)
   return wsdlObj;
 }

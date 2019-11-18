@@ -282,7 +282,7 @@ Client.prototype._invoke = function(method, args, location, options, extraHeader
     }
   };
 
-  console.log('url:', location)
+  // console.log('url:', location)
   
   return (<HttpClient>self.httpClient).post(location, xml, {
     headers: headers,
